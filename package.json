@@ -18,10 +18,10 @@
   ]
 , "main" : "./db-oracle"
 , "scripts" :
-  { "install": "node-waf configure build"
+  { "install": "node-gyp configure build"
   , "preuninstall": "rm -rf build/*"
-  , "test" : "node-waf test"
-  , "doc" : "node-waf doc"
+  , "test" : "node-gyp test"
+  , "doc" : "node-gyp doc"
   }
 , "devDependencies" :
   { "nodeunit" : "*"
